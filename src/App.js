@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      <h1 className="center-title">Memory Lane 💖</h1>
+      <h1 className="center-title">❤️</h1>
       <Flipbook />
     </div>
   );
