@@ -13,13 +13,12 @@ import './App.css';
 import Flipbook from "./Flipbook";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDlmLFEwhfctVjC1dEm3eAS3oyprfs7NDs",
-  authDomain: "memory-lane-b56b1.firebaseapp.com",
-  projectId: "memory-lane-b56b1",
-  storageBucket: "memory-lane-b56b1.appspot.com",
-  messagingSenderId: "457323640693",
-  appId: "1:457323640693:web:bafdb60eb07df53a2ac53c",
-  measurementId: "G-HZP9PMSRHW"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
